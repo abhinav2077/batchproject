@@ -1,0 +1,739 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5vh;
+}
+#page1{
+    width: 100%;
+    height: 100vh;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a.active,a:hover{
+    color: red;
+}
+#nav #toggle_btn{
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+#action_btn{
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+    font-family: "Urbanist", sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-style: none;
+    border-radius: .3vw;
+    transition: background-color .2s;
+}
+#action_btn:hover{
+    cursor: pointer;
+    background-color: rgb(94, 94, 94);
+}
+#logo{
+    width: 150px;
+}
+#nav #links{
+    display: flex;
+    font-family: "Urbanist", sans-serif;
+    font-size: 20px;
+    gap: 2vw;
+}
+#dropdown_menu{
+    display: none;
+    position: fixed;
+    right: 10vw;
+    width: 80vw;
+    top: 12vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px rgb(140, 140, 140);
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+#dropdown_menu li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5vw;
+    font-family: "Urbanist", sans-serif;
+    font-size: 20px;
+}
+
+#page1-content{
+    display: flex;
+    padding-top: 5vw;
+    height: 80vh;
+}
+#content-left{
+    flex: 1;
+}
+
+#big-text{
+    position: relative;
+    z-index: 10;
+    font-family: "Urbanist", sans-serif;
+    font-size: 4vw;
+    line-height: 4vw;
+    font-weight: 900;
+}
+#small-text{
+    position: relative;
+    z-index: 10;
+    font-family: "Urbanist", sans-serif;
+    font-size: 1.3vw;
+    padding-top: 1.2vw;
+    color: rgb(127, 127, 127);
+}
+#content-left-3{
+    display: flex;
+    padding-top: 1.3vw;
+    gap: 2vw;
+}
+#get-started{
+    border-style: none;
+    background-color: black;
+    font-family: "Urbanist", sans-serif;
+    color: white;
+    font-size: 1.8vh;
+    border-radius: 5px;
+    padding: 1.2vw;
+    padding-left: 2.3vw;
+    padding-right: 2.3vw;
+}
+#get-started:hover{
+    cursor: pointer;
+    background-color: rgb(94, 94, 94);
+}
+#watch{
+    margin-top: .5vw;
+    width: 140px;
+    height: 5vh;
+}
+#strip{
+    width: 40vw;
+}
+#content-right{
+    flex: 1;
+}
+#threephones{
+    width: 40vw;
+}
+#page2{
+    width: 100%;
+    min-height: 100vh;
+}
+#page2-content{
+    width: 100%;
+    height: 100vh;
+    padding-top: 0vw;
+    display: flex;
+}
+#pg2-content-left{
+    flex: 1;
+}
+#pg2-content-right{
+    flex: 1;
+    padding-left: 5vw;
+    padding-top: 5vw;
+}
+#single-phone-1{
+    width: 100%;
+}
+#page2-heading h2{
+    color: red;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 300;
+}
+#page2-heading h1{
+    padding-top: .5vw;
+    font-size: 3vw;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 900;
+}
+#page2-points{
+    padding-top: 2vw;
+}
+#page2-point-heading{
+    display: flex;
+    gap: .7vw;
+}
+#point-head{
+    font-family: "Urbanist", sans-serif;
+    font-weight: 700;
+    font-size: 1.2vw;
+}
+#point-info{
+    padding-top: 1.2vw;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    font-size: 1.1vw;
+    line-height: 1.7vw;
+    color: gray;
+}
+#page3{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: -2vw;
+}
+#page3-content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+#page3-content-left{
+    flex: 1;
+    padding-top: 10vw;
+    padding-left: 5vw;
+}
+#page3-content-right{
+    flex: 1;
+}
+#single-phone-2{
+    width: 100%;
+}
+#page3-heading h2{
+    color: red;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 300;
+}
+#page3-heading h1{
+    padding-top: .5vw;
+    font-size: 3vw;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 900;
+}
+#page3-points{
+    padding-top: 2vw;
+}
+#page3-point-heading{
+    display: flex;
+    gap: .7vw;
+}
+#pg3-point-head{
+    font-family: "Urbanist", sans-serif;
+    font-weight: 700;
+    font-size: 1.6vw;
+    padding-top: .3vw;
+}
+
+#page4{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: -4vw;
+}
+#page4-content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+#page4-content-left{
+    flex: 1;
+}
+#page4-content-right{
+    flex: 1;
+    padding-left: 6vw;
+}
+#single-phone-3{
+    width: 100%;
+}
+#page4-points{
+    padding-top: 2vw;
+}
+#page4-point-heading{
+    display: flex;
+    gap: .7vw;
+    padding-top: 10vw;
+}
+#pg4-point-head{
+    font-family: "Urbanist", sans-serif;
+    font-weight: 700;
+    font-size: 1.6vw;
+    padding-top: .3vw;
+}
+
+#page5{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: -8vw;
+}
+#page5-content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+#page5-content-left{
+    flex: 1;
+}
+#page5-content-right{
+    flex: 1;
+    padding-left: 4vw;
+    padding-right: 5vw;
+}
+#page5-points{
+    padding-top: 0vw;
+}
+#page5-point-heading{
+    display: flex;
+    gap: .7vw;
+    padding-top: 5vw;
+}
+#pg5-point-head{
+    font-family: "Urbanist", sans-serif;
+    font-weight: 700;
+    font-size: 2vw;
+    padding-top: .3vw;
+}
+#pfp{
+    width: 100%;
+}
+#page5-central{
+    text-align: center;
+}
+#page5-central h2{
+    color: black;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+}
+#page5-central p{
+    padding-top: .5vw;
+    font-size: 3vw;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 900;
+    line-height: 3vw;
+}
+
+#page6{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 0vw;
+}
+#page6-head{
+    display: flex;
+}
+#pg6-head-left{
+    flex: 1;
+    padding-left: 5vw;
+}
+#pg6-head-left h2{
+    color: red;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 300;
+}
+#pg6-head-left h1{
+    padding-top: .5vw;
+    font-size: 3vw;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 900;
+}
+#pg6-head-right{
+    flex: 1;
+}
+#page6-content{
+    display: flex;
+    padding-left: 5vw;
+    gap: 1vw;
+}
+#page6-content-left{
+    flex: 1;
+}
+#page6-content-right{
+    flex: 1;
+}
+#red-bg{
+    background-color: rgb(255, 71, 71);
+    border-radius: .5vw;
+    font-family: "Urbanist", sans-serif;
+    padding: 2vw;
+    color: white;
+    margin-top: 1vw;
+}
+#red-bg h2{
+    font-size: 1.8vw;
+}
+#red-bg p{
+    padding-top: .5vw;
+    font-size: 1.2vw;
+    line-height: 1.8vw;
+}
+#white-bg{
+    background-color: rgb(255, 255, 255);
+    border-radius: .5vw;
+    font-family: "Urbanist", sans-serif;
+    padding: 2vw;
+    color: rgb(0, 0, 0);
+    margin-top: 1vw;
+}
+#white-bg h2{
+    font-size: 1.8vw;
+}
+#white-bg p{
+    padding-top: .5vw;
+    font-size: 1.2vw;
+    line-height: 1.8vw;
+}
+#page7{
+    width: 100%;
+    height: 100vh;
+}
+#page7-img{
+    width: 100%;
+}
+#footer{
+    width: 100%;
+    min-height: 10vh;
+    margin-top: -5vw;
+    bottom: 0;
+}
+#footer-img{
+    width: 100%;
+}
+
+@media (max-width: 874px){
+    #nav #links,
+    #nav #action_btn {
+        display: none;
+    }
+    #nav #toggle_btn{
+        display: block;
+    }
+    #page1-content{
+        display: block;
+        text-align: center;
+        align-items: center;
+    }
+    
+    #big-text{
+        position: relative;
+        z-index: 10;
+        font-family: "Urbanist", sans-serif;
+        font-size: 10vw;
+        line-height: 9vw;
+        font-weight: 900;
+        text-align: left;
+    }
+    #spray{
+        z-index: 9;
+        margin-top: -15vw;
+    }
+    #small-text{
+        position: relative;
+        z-index: 10;
+        font-family: "Urbanist", sans-serif;
+        font-size: 4vw;
+        text-align: left;
+        padding-top: 2vh;
+        color: rgb(127, 127, 127);
+    }
+    #content-left-3{
+        display: flex;
+        padding-top: 2vh;
+        gap: 2vw;
+    }
+    #get-started{
+        border-style: none;
+        background-color: black;
+        font-family: "Urbanist", sans-serif;
+        color: white;
+        font-size: 1.6vh;
+        border-radius: 5px;
+        padding: 1.2vw;
+        padding-left: 2.3vw;
+        padding-right: 2.3vw;
+    }
+    #get-started:hover{
+        cursor: pointer;
+        background-color: rgb(94, 94, 94);
+    }
+    #watch{
+        margin-top: .5vw;
+        width: 150px;
+        height: 5vh;
+    }
+    #strip{
+        width: 85vw;
+    }
+    #content-right{
+        flex: 1;
+    }
+    #threephones{
+        width: 85vw;
+    }
+    #dropdown_menu{
+        display: none;
+        transition: display 1s ease;
+        z-index: 20;
+    }
+
+    #page2{
+        width: 100%;
+        min-height: 100vh;
+        padding-top: 25vh;
+    }
+    #page2-content{
+        text-align: center;
+        align-items: center;
+        display: block;
+    }
+    #pg2-content-left{
+        flex: 1;
+    }
+    #pg2-content-right{
+        flex: 1;
+        padding-left: 5vw;
+        padding-top: 5vw;
+    }
+    #single-phone-1{
+        width: 100%;
+    }
+    #page2-heading h2{
+        color: red;
+        font-family: "Urbanist", sans-serif;
+        font-weight: 300;
+    }
+    #page2-heading h1{
+        padding-top: .5vw;
+        font-size: 11vw;
+        font-family: "Urbanist", sans-serif;
+        font-weight: 900;
+    }
+    #page2-points{
+        padding-top: 4vw;
+    }
+    #page2-point-heading{
+        display: flex;
+        gap: .7vw;
+    }
+    #point-head{
+        font-family: "Urbanist", sans-serif;
+        font-weight: 700;
+        font-size: 6vw;
+        text-align: left;
+        padding-left: 1vw;
+    }
+    #point-info{
+        padding-top: 1.8vw;
+        font-family: "Urbanist", sans-serif;
+        font-weight: 500;
+        text-align: left;
+        font-size: 4vw;
+        line-height: 5vw;
+        color: gray;
+    }
+    #page3{
+        padding-top: 20vh;
+    }
+    #page3-content{
+        text-align: center;
+        align-items: center;
+        display: block;
+    }
+    #single-phone-2{
+        width: 100%;
+    }
+    #page3-heading h2{
+        color: red;
+        font-family: "Urbanist", sans-serif;
+        font-weight: 300;
+    }
+    #page3-heading h1{
+        padding-top: .5vw;
+        font-size: 11vw;
+        font-family: "Urbanist", sans-serif;
+        font-weight: 900;
+    }
+    #page3-points{
+        padding-top: 4vw;
+    }
+    #page3-point-heading{
+        display: flex;
+        gap: .7vw;
+    }
+    #pg3-point-head{
+        font-family: "Urbanist", sans-serif;
+        font-weight: 700;
+        font-size: 6vw;
+        padding-top: 1.2vh;
+        padding-left: 1vw;
+    }
+
+    #page4{
+        padding-top:10vh ;
+    }
+    #page4-content{
+        text-align: center;
+        align-items: center;
+        display: block;
+    }
+    #page4-points{
+        padding-top: 4vw;
+    }
+    #page4-point-heading{
+        display: flex;
+        gap: .7vw;
+        padding-top: 10vw;
+    }
+    #pg4-point-head{
+        font-family: "Urbanist", sans-serif;
+        font-weight: 700;
+        font-size: 6vw;
+        padding-top: 1.2vh;
+        padding-left: 1vw;
+    }
+
+    #page5-content{
+        text-align: center;
+        align-items: center;
+        display: block;
+    }
+    #page5-points{
+        padding-top: 0vw;
+    }
+    #page5-point-heading{
+        display: flex;
+        gap: .7vw;
+        padding-top: 5vw;
+    }
+    #pg5-point-head{
+        font-family: "Urbanist", sans-serif;
+        font-weight: 700;
+        font-size: 7vw;
+        text-align: left;
+        padding-top: .3vw;
+    }
+    #pfp{
+        width: 100%;
+    }
+    #page5-central{
+        text-align: center;
+    }
+    #page5-central h2{
+        color: black;
+        font-family: "Urbanist", sans-serif;
+        font-weight: 400;
+    }
+    #page5-central p{
+        padding-top: .5vw;
+        font-size: 10vw;
+        font-family: "Urbanist", sans-serif;
+        font-weight: 900;
+        line-height: 9vw;
+    }
+    #page6{
+        margin-top: -20vh;
+    }
+    #page6-head{
+        padding-top: 20vh;
+        text-align: center;
+        align-items: center;
+        display: block;
+    }
+    #pg6-head-left{
+        padding-left: 0;
+    }
+    #pg6-head-left h2{
+        color: red;
+        font-family: "Urbanist", sans-serif;
+        font-weight: 300;
+    }
+    #pg6-head-left h1{
+        padding-top: .5vw;
+        font-size: 11vw;
+        font-family: "Urbanist", sans-serif;
+        font-weight: 900;
+    }
+    #pg6-head-right img{
+        display: none;
+    }
+    #page6-content{
+        padding-left: 0;
+        text-align: center;
+        align-items: center;
+        display: block;
+    }
+    #red-bg{
+        background-color: rgb(255, 71, 71);
+        border-radius: 5px;
+        font-family: "Urbanist", sans-serif;
+        padding: 2.2vw;
+        color: white;
+        margin-top: 4vw;
+    }
+    #red-bg h2{
+        font-size: 6vw;
+    }
+    #red-bg p{
+        padding-top: .5vw;
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+    #white-bg{
+        background-color: rgb(255, 255, 255);
+        border-radius: .5vw;
+        font-family: "Urbanist", sans-serif;
+        padding: 2vw;
+        color: rgb(0, 0, 0);
+        margin-top: 2vw;
+    }
+    #white-bg h2{
+        font-size: 6vw;
+    }
+    #white-bg p{
+        padding-top: .5vw;
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+
+    #page7{
+        display: block;
+        height: 30vh;
+    }
+    #page7-img{
+        width: 100%;
+    }
+    #footer{
+        width: 100%;
+        min-height: 10vh;
+        margin-top: 10vw;
+        bottom: 0;
+    }
+    #footer-img{
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
